@@ -34,7 +34,7 @@ Built with Streamlit and Plotly, the dashboard features:
 ### Links
 
 - [EDA notebook](https://github.com/markus-pettersen/television_cleaning/blob/main/notebooks/06_eda.ipynb)
-- [Dashboard](blank)
+- [Dashboard](https://television-series-dashboard.streamlit.app/)
 - [Original dataset](https://www.kaggle.com/datasets/bharatnatrayn/movies-dataset-for-feature-extracion-prediction/data)
 - [IMDb](https://www.imdb.com/)
 - [TVMaze API](https://www.tvmaze.com/api)
