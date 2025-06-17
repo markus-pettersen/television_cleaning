@@ -181,6 +181,11 @@ elif page == "Genre Co-occurrence":
 
 	heatmap_selector = st.multiselect("Genres", all_genres, default=["Action", "Adventure", "Animation"])
 	heatmap_genres = genre_df[genre_df["genre"].isin(heatmap_selector)]
+
+    if not heatmap_selector:
+        st.warning("Please select at least one genre")
+        st.stop()
+    
 	genre_matrix = pd.crosstab(heatmap_genres["id"], heatmap_genres["genre"])
 	co_occurr = genre_matrix.T @ genre_matrix
 	normalised = co_occurr.div(np.diag(co_occurr), axis=0)
